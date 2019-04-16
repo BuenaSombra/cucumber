@@ -51,9 +51,10 @@ function actualizarVista() {
     container.appendChild(visconta)
     var tiempo = 1
     contador = setInterval(() => {
-        visconta.innerText = msToTime(tiempo * 1000)
+        visconta.innerText = msToTime(tiempo * 100)
         tiempo++
-    }, 1000);
+        //console.log(tiempo)
+    }, 100);
 }
 
 function msToTime(ms) {
